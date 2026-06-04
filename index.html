@@ -6,11 +6,7 @@
 <title>樂予有限公司｜台灣檜木企業客製化伴手禮專家</title>
 
 <style>
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-}
+*{margin:0;padding:0;box-sizing:border-box}
 
 body{
 font-family:"Microsoft JhengHei",sans-serif;
@@ -20,9 +16,8 @@ line-height:1.8;
 }
 
 .hero{
-height:100vh;
-background:linear-gradient(rgba(0,0,0,.35),rgba(0,0,0,.35)),
-url('https://images.unsplash.com/photo-1448375240586-882707db888b');
+height:90vh;
+background:linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.4)),url('apple.jpg');
 background-size:cover;
 background-position:center;
 display:flex;
@@ -30,16 +25,11 @@ align-items:center;
 justify-content:center;
 text-align:center;
 color:white;
+padding:20px;
 }
 
-.hero h1{
-font-size:60px;
-margin-bottom:20px;
-}
-
-.hero p{
-font-size:22px;
-}
+.hero h1{font-size:60px;margin-bottom:20px}
+.hero p{font-size:24px}
 
 .section{
 max-width:1200px;
@@ -61,22 +51,35 @@ font-size:20px;
 
 .products{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
 gap:30px;
 margin-top:40px;
 }
 
 .card{
 background:white;
-padding:30px;
-border-radius:15px;
-box-shadow:0 5px 15px rgba(0,0,0,.08);
+border-radius:16px;
+box-shadow:0 6px 20px rgba(0,0,0,.08);
+overflow:hidden;
 text-align:center;
 }
 
+.card img{
+width:100%;
+height:320px;
+object-fit:cover;
+display:block;
+}
+
 .card h3{
-margin-bottom:15px;
+padding:18px 18px 8px;
 color:#35523a;
+font-size:24px;
+}
+
+.card p{
+padding:0 22px 28px;
+font-size:16px;
 }
 
 .process{
@@ -88,7 +91,7 @@ justify-content:center;
 
 .step{
 background:white;
-padding:20px;
+padding:25px;
 width:220px;
 border-radius:15px;
 text-align:center;
@@ -102,8 +105,15 @@ text-align:center;
 padding:80px 20px;
 }
 
-.contact h2{
-margin-bottom:30px;
+.contact h2{margin-bottom:25px}
+
+.qrcode{
+width:230px;
+max-width:80%;
+background:white;
+padding:12px;
+border-radius:16px;
+margin-top:25px;
 }
 
 footer{
@@ -111,6 +121,12 @@ background:#243828;
 color:white;
 text-align:center;
 padding:20px;
+}
+
+@media(max-width:768px){
+.hero h1{font-size:42px}
+.hero p{font-size:20px}
+.card img{height:auto}
 }
 </style>
 </head>
@@ -127,34 +143,49 @@ padding:20px;
 <section class="section">
 <h2 class="title">品牌理念</h2>
 <div class="about">
-將台灣珍貴檜木文化融入企業品牌禮贈品，
-打造兼具質感、紀念價值與品牌識別度的專屬伴手禮。
+將台灣珍貴檜木文化融入企業品牌禮贈品，打造兼具質感、紀念價值與品牌識別度的專屬伴手禮。
 </div>
 </section>
 
 <section class="section">
-<h2 class="title">客製化產品</h2>
+<h2 class="title">精選商品</h2>
 
 <div class="products">
 
 <div class="card">
-<h3>檜木名片盒</h3>
-<p>企業LOGO雷雕客製</p>
+<img src="cardholder.jpg" alt="檜樂手機名片座">
+<h3>檜樂手機名片座</h3>
+<p>台灣檜木製作，兼具手機支架與名片展示功能，適合辦公桌與企業贈禮。</p>
 </div>
 
 <div class="card">
-<h3>檜木杯墊</h3>
-<p>品牌活動紀念禮品</p>
+<img src="cat.jpg" alt="招財貓">
+<h3>招財貓</h3>
+<p>象徵招財納福與好運相伴，適合作為開幕、喬遷與商務祝福禮品。</p>
 </div>
 
 <div class="card">
-<h3>檜木筆座</h3>
-<p>高質感商務贈禮</p>
+<img src="box.jpg" alt="台灣檜木珠寶盒">
+<h3>台灣檜木珠寶盒</h3>
+<p>天然檜木紋理搭配精緻五金鎖扣，可收納首飾、紀念品與珍藏小物。</p>
 </div>
 
 <div class="card">
-<h3>檜木獎牌</h3>
-<p>企業表揚紀念品</p>
+<img src="notebook.jpg" alt="台灣檜木活頁筆記本">
+<h3>台灣檜木活頁筆記本</h3>
+<p>溫潤木質封面搭配可替換內頁，可客製化雷射雕刻品牌LOGO。</p>
+</div>
+
+<div class="card">
+<img src="eggs.jpg" alt="十全十美檜樂蛋盆組">
+<h3>十全十美檜樂蛋盆組</h3>
+<p>檜木蛋與木盆組合，象徵圓滿、平安與十全十美，適合作為企業祝福禮。</p>
+</div>
+
+<div class="card">
+<img src="apple.jpg" alt="2吋半蘋果">
+<h3>2吋半蘋果</h3>
+<p>以台灣檜木製作，寓意平安順遂，適合客製化祝福禮與空間擺飾。</p>
 </div>
 
 </div>
@@ -164,33 +195,14 @@ padding:20px;
 <h2 class="title">服務流程</h2>
 
 <div class="process">
-
-<div class="step">
-<h3>01</h3>
-需求洽談
+<div class="step"><h3>01</h3>需求洽談</div>
+<div class="step"><h3>02</h3>設計提案</div>
+<div class="step"><h3>03</h3>客製製作</div>
+<div class="step"><h3>04</h3>交付出貨</div>
 </div>
-
-<div class="step">
-<h3>02</h3>
-設計提案
-</div>
-
-<div class="step">
-<h3>03</h3>
-客製製作
-</div>
-
-<div class="step">
-<h3>04</h3>
-交付出貨
-</div>
-
-</div>
-
 </section>
 
 <section class="contact">
-
 <h2>聯絡我們</h2>
 
 <p>余家葳 Ariel｜執行長</p>
@@ -199,6 +211,9 @@ padding:20px;
 <p>新北市淡水區淡金路一段166號</p>
 <p>統一編號：83502280</p>
 
+<img class="qrcode" src="line-qrcode.jpg" alt="LINE QR Code">
+
+<p>掃描 QR Code 加入 LINE 洽詢</p>
 </section>
 
 <footer>
